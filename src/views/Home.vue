@@ -19,14 +19,16 @@
   </div>
 </template>
 
-<script>
-import EventsList from "@/components/EventsList";
-export default {
-  name: "home",
+<script lang='ts'>
+import { Component, Vue } from 'vue-property-decorator'
+import EventsList from '@/components/EventsList.vue'
+
+@Component({
   components: {
     EventsList,
-  },
-};
+  }
+})
+export default class Home extends Vue { }
 </script>
 
 <style lang="scss" scoped>

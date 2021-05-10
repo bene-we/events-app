@@ -9,11 +9,16 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  props: ["event"],
-};
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator'
+
+@Component
+export default class EventCard extends Vue {
+  @Prop() event!: any   // ToDo: Add interface
+}
 </script>
+
 <style lang="scss" scoped>
 .card {
   background-image: url("https://placekitten.com/400/400");

@@ -1,5 +1,7 @@
 # events-app
 
+Semicolons in TypeScript files are omitted because of this article: https://medium.com/@eugenkiss/dont-use-semicolons-in-typescript-474ccfe4bdb3
+
 ## Project setup
 ```
 npm install

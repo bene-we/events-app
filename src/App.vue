@@ -5,14 +5,16 @@
   </div>
 </template>
 
-<script>
-import Nav from "./components/partials/Nav.vue";
-export default {
-  name: "app",
+<script lang='ts'>
+import { Component, Vue } from 'vue-property-decorator'
+import Nav from './components/partials/Nav.vue'
+
+@Component({
   components: {
     Nav,
   },
-};
+})
+export default class App extends Vue { }
 </script>
 
 <style lang="scss">
