@@ -12,10 +12,11 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Event } from '@/types/event.model'
 
 @Component
 export default class EventCard extends Vue {
-  @Prop() event!: any   // ToDo: Add interface
+  @Prop() event!: Event   // ToDo: Add interface
 }
 </script>
 
