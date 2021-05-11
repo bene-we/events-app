@@ -15,6 +15,14 @@
         </div>
       </div>
     </section>
+
+    <!-- Check that the SDK client is not currently loading before accessing its methods -->
+    <div v-if="!$auth.loading">
+      <!-- show login when not authenticated -->
+      <button v-if="!$auth.isAuthenticated" @click="login">Log in</button>
+      <!-- show logout when authenticated -->
+      <button v-if="$auth.isAuthenticated" @click="logout">Log out</button>
+    </div>
     <EventsList />
   </div>
 </template>
@@ -28,7 +36,17 @@ import EventsList from '@/components/EventsList.vue'
     EventsList,
   }
 })
-export default class Home extends Vue { }
+export default class Home extends Vue {
+  login (): void {
+    this.$auth.loginWithRedirect({})
+  }
+
+  logout (): void {
+    this.$auth.logout({
+      returnTo: window.location.origin
+    })
+  }
+}
 </script>
 
 <style lang="scss" scoped>
