@@ -20,6 +20,13 @@
       <div class="navbar-start">
         <router-link to="/" class="navbar-item">Home</router-link>
         <router-link to="/about" class="navbar-item">About</router-link>
+        <router-link
+          v-if="$auth.isAuthenticated"
+          to="/profile"
+          class="navbar-item"
+        >
+          Profile
+        </router-link>
       </div>
       <div class="navbar-end">
         <div class="navbar-item">
@@ -38,7 +45,7 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class Nav extends Vue {}
+export default class Nav extends Vue { }
 </script>
 
 <style lang="scss" scoped>

@@ -22,6 +22,11 @@ const routes: Array<RouteConfig> = [
     path: '/event/:id',
     name: 'eventSingle',
     component: () => import('../views/EventSingle.vue')
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: () => import('../views/Profile.vue')
   }
 ]
 
