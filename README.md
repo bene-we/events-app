@@ -26,7 +26,7 @@ Read more about Class-Style Vue Components [here](https://vuejs.org/v2/guide/typ
 </thead>
 <tbody>
 <tr>
-<td colspan="2" align="center">
+<td colspan="2" align="center" style="margin: 0; ">
 
 file: [`src/components/partials/Nav.vue`](https://github.com/bene-we/events-app/blob/main/src/components/partials/Nav.vue)
 
@@ -77,7 +77,7 @@ export default class Nav extends Vue {
 </td>
 </tr>
 <tr>
-<td colspan="2" align="center">
+<td colspan="2" align="center" style="margin: 0; ">
 
 file: [`src/components/EventCard.vue`](https://github.com/bene-we/events-app/blob/main/src/components/EventCard.vue)
 
@@ -110,7 +110,7 @@ export default class EventCard extends Vue {
 </td>
 </tr>
 <tr>
-<td colspan="2" align="center">
+<td colspan="2" align="center" style="margin: 0; ">
 
 file: [`src/App.vue`](https://github.com/bene-we/events-app/blob/main/src/App.vue)
 
