@@ -28,6 +28,7 @@ Read more about Class-Style Vue Components [here](https://vuejs.org/v2/guide/typ
 <tr>
 <td valign="top">
 <pre>
+
 ```javascript
 export default {
   name: 'Nav',
@@ -45,10 +46,13 @@ export default {
   }
 }
 ```
+
 </pre>
 </td valign="top">
 <td>
 <pre>
+
+```typescript
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
@@ -63,6 +67,8 @@ export default class Nav extends Vue {
     })
   }
 }
+```
+
 </pre>
 </td>
 </tr>
