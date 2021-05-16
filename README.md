@@ -110,10 +110,8 @@ export default class EventCard extends Vue {
 </td>
 </tr>
 <tr>
-<td colspan="2" align="center" style="margin: 0; ">
-
-file: [`src/App.vue`](https://github.com/bene-we/events-app/blob/main/src/App.vue)
-
+<td colspan="2" align="center">
+<a href="https://github.com/bene-we/events-app/blob/main/src/App.vue"><em>src/App.vue</em></a>
 </td>
 </tr>
 <tr>
