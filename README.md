@@ -7,9 +7,69 @@ However this example incorporates several changes, the most profound one is the 
 
 ## Changes
 
-### Handling Auth0 authentication
+### TypeScript in Vue application
+
+## Handling Auth0 authentication
 
 The original tutorial by Holly Guevara uses `JavaScript` to implement the [auth0](auth0.com) authentication into the app. This setup differs quite a bit from the implementation in `TypeScript`, therefore [this tutorial](https://blog.risingstack.com/auth0-vue-typescript-quickstart-docs/#logintotheapp) by Tamas Kadlecsik from [RisingStack](risingstack.com) is being used. His tutorial is pretty straight forward and helps with the implementation of [auth0](auth0.com) using `TypeScript`, which is a little hard to find across the internet.
+
+## Using Class-Style Vue Components
+
+Read more about Class-Style Vue Components [here](https://vuejs.org/v2/guide/typescript.html#Class-Style-Vue-Components). Every Vue component in this projects uses this component style.
+
+<table>
+<thead>
+<tr>
+<th>JavaScript Vue Component</th>
+<th>TypeScript Class-Style Vue Component</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td valign="top">
+<pre>
+```javascript
+export default {
+  name: 'Nav',
+  methods: {
+    // Log the user in
+    login() {
+      this.$auth.loginWithRedirect();
+    },
+    // Log the user out
+    logout() {
+      this.$auth.logout({
+        returnTo: window.location.origin
+      });
+    }
+  }
+}
+```
+</pre>
+</td valign="top">
+<td>
+<pre>
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component
+export default class Nav extends Vue {
+  login (): void {
+    this.$auth.loginWithRedirect({})
+  }
+
+  logout (): void {
+    this.$auth.logout({
+      returnTo: window.location.origin
+    })
+  }
+}
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+
+`src/components/partials/Nav.vue`
 
 
 ### Misc
