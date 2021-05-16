@@ -1,6 +1,6 @@
-/* eslint-disable no-console */
-import * as execa from 'execa';
-import * as fs from 'fs';
+/* eslint-disable no-console, @typescript-eslint/no-var-requires */
+const execa = require('execa');
+const fs = require('fs');
 (async () => {
     try {
         await execa('git', ['checkout', '--orphan', 'gh-pages']);
