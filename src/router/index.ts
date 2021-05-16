@@ -22,7 +22,8 @@ const routes: Array<RouteConfig> = [
   {
     path: '/event/:id',
     name: 'eventSingle',
-    component: () => import('../views/EventSingle.vue')
+    component: () => import('../views/EventSingle.vue'),
+    beforeEnter: authGuard
   },
   {
     path: '/profile',
