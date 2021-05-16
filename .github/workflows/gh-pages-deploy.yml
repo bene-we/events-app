@@ -33,10 +33,10 @@ jobs:
       - name: Create 'auth.config.json' from secrets
         env:
           AUTH_CONFIG_JSON: ${{ secrets.AUTH_CONFIG_JSON }}
-        run: echo $AUTH_CONFIG_JSON | base64 -d
+        run: echo "$AUTH_CONFIG_JSON" | base64 -d
       - name: Create 'auth.config.json' from secrets
         env:
           AUTH_CONFIG_JSON: ${{ secrets.AUTH_CONFIG_JSON }}
-        run: echo $AUTH_CONFIG_JSON | base64 -d > auth.config.json
+        run: echo "$AUTH_CONFIG_JSON" | base64 -d > auth.config.json
       - name: Deploy
         run: npm run deploy
