@@ -1,3 +1,4 @@
+import { authGuard } from '@/auth/authGuard'
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
@@ -26,7 +27,8 @@ const routes: Array<RouteConfig> = [
   {
     path: '/profile',
     name: 'profile',
-    component: () => import('../views/Profile.vue')
+    component: () => import('../views/Profile.vue'),
+    beforeEnter: authGuard
   }
 ]
 
