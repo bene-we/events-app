@@ -9,14 +9,12 @@ However this example incorporates several changes, the most profound one is the 
 
 ### Handling Auth0 authentication
 
-The original tutorial by Holly Guevara uses `JavaScript` to implement the [auth0](auth0.com) authentication into the app. This setup differs quite a bit from the implementation in `TypeScript`, therefore [this tutorial](https://blog.risingstack.com/auth0-vue-typescript-quickstart-docs/#logintotheapp) by Tamas Kadlecsik from [RisingStack](risingstack.com) is being used.
-
-His tutorial is pretty straight forward and helps with the implementation of [auth0](auth0.com) using `TypeScript`, which is a little hard to find across the internet.
+The original tutorial by Holly Guevara uses `JavaScript` to implement the [auth0](auth0.com) authentication into the app. This setup differs quite a bit from the implementation in `TypeScript`, therefore [this tutorial](https://blog.risingstack.com/auth0-vue-typescript-quickstart-docs/#logintotheapp) by Tamas Kadlecsik from [RisingStack](risingstack.com) is being used. His tutorial is pretty straight forward and helps with the implementation of [auth0](auth0.com) using `TypeScript`, which is a little hard to find across the internet.
 
 
 ### Misc
 
-* Semicolons in TypeScript files are omitted because of [this article](https://medium.com/@eugenkiss/dont-use-semicolons-in-typescript-474ccfe4bdb3)
+* Semicolons in TypeScript files and `<script>` sections are omitted because of [this article](https://medium.com/@eugenkiss/dont-use-semicolons-in-typescript-474ccfe4bdb3)
 
 <br>
 
