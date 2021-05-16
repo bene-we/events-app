@@ -11,7 +11,7 @@
             <button
               v-if="!$auth.isAuthenticated"
               @click="login"
-              class="button is-xl is-dark"
+              class="button is-xl is-primary"
             >
               Sign Up to Browse Events
             </button>

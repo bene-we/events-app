@@ -151,6 +151,7 @@ The [auth0](auth0.com) implementation is translated into typescript and can be f
 ### Misc
 
 * Semicolons in TypeScript files and `<script>` sections are omitted because of [this article](https://medium.com/@eugenkiss/dont-use-semicolons-in-typescript-474ccfe4bdb3)
+* Bulma is being customized, following [this tutorial](https://hackernoon.com/how-to-use-bulma-and-vuejs-together-z0103ucp)
 
 <br>
 
