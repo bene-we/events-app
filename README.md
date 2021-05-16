@@ -9,11 +9,9 @@ However this example incorporates several changes, the most profound one is the 
 
 ### TypeScript in Vue application
 
-## Handling Auth0 authentication
+The original tutorial by Holly Guevara uses `JavaScript` to implement the app. This setup differs quite a bit from the implementation in `TypeScript`, therefore [this tutorial](https://blog.risingstack.com/auth0-vue-typescript-quickstart-docs/#logintotheapp) by Tamas Kadlecsik from [RisingStack](risingstack.com) is being used. His tutorial is pretty straightforward and helps with the implementation of [auth0](auth0.com) using `TypeScript`, which is a little hard to find across the internet.
 
-The original tutorial by Holly Guevara uses `JavaScript` to implement the [auth0](auth0.com) authentication into the app. This setup differs quite a bit from the implementation in `TypeScript`, therefore [this tutorial](https://blog.risingstack.com/auth0-vue-typescript-quickstart-docs/#logintotheapp) by Tamas Kadlecsik from [RisingStack](risingstack.com) is being used. His tutorial is pretty straight forward and helps with the implementation of [auth0](auth0.com) using `TypeScript`, which is a little hard to find across the internet.
-
-## Using Class-Style Vue Components
+#### Using Class-Style Vue Components
 
 Read more about Class-Style Vue Components [here](https://vuejs.org/v2/guide/typescript.html#Class-Style-Vue-Components). Every Vue component in this projects uses this component style.
 
@@ -144,6 +142,10 @@ export default class App extends Vue { }
 </tr>
 </tbody>
 </table>
+
+#### Auth0 implementation
+
+The [auth0](auth0.com) implementation is translated into typescript and can be found in [src/auth](https://github.com/bene-we/events-app/tree/main/src/auth).
 
 
 ### Misc
