@@ -57,7 +57,8 @@ export default {
 <td valign="top">
 
 ```typescript
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } 
+    from 'vue-property-decorator'
 
 @Component
 export default class Nav extends Vue {
@@ -95,8 +96,10 @@ export default {
 <td valign="top">
 
 ```typescript
-import { Component, Prop, Vue } from 'vue-property-decorator'
-import { Event } from '@/models/event.model'
+import { Component, Prop, Vue } 
+    from 'vue-property-decorator'
+import { Event } 
+    from '@/models/event.model'
 
 @Component
 export default class EventCard extends Vue {
@@ -117,7 +120,8 @@ file: [`src/App.vue`](https://github.com/bene-we/events-app/blob/main/src/App.vu
 <td valign="top">
 
 ```javascript
-import Nav from './components/partials/Nav.vue';
+import Nav 
+    from './components/partials/Nav.vue';
 export default {
   name: 'app',
   components: {
@@ -130,8 +134,10 @@ export default {
 <td valign="top">
 
 ```typescript
-import { Component, Vue } from 'vue-property-decorator'
-import Nav from './components/partials/Nav.vue'
+import { Component, Vue } 
+    from 'vue-property-decorator'
+import Nav 
+    from './components/partials/Nav.vue'
 
 @Component({
   components: {
