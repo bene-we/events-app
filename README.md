@@ -120,8 +120,7 @@ file: [`src/App.vue`](https://github.com/bene-we/events-app/blob/main/src/App.vu
 <td valign="top">
 
 ```javascript
-import Nav 
-    from './components/partials/Nav.vue';
+import Nav from './components/partials/Nav.vue';
 export default {
   name: 'app',
   components: {
