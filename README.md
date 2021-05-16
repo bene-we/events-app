@@ -4,6 +4,8 @@ This is an example app using `Vue` and `TypeScript`. The `events-app` is based o
 
 However this example incorporates several changes, the most profound one is the use of `TypeScript`. I try to outline the differences in this README.
 
+The corporate design color palette can be found on [coolors.co](https://coolors.co/f6bd60-f7ede2-f5cac3-84a59d-f28482) or in [src/assets/color-palette.png](https://github.com/bene-we/events-app/blob/main/src/assets/color-palette.png).
+
 
 ## Changes
 
