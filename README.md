@@ -103,7 +103,7 @@ import { Event }
 
 @Component
 export default class EventCard extends Vue {
-  @Prop() event!: Event   // ToDo: Add interface
+  @Prop() event!: Event
 }
 ```
 
