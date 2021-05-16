@@ -56,7 +56,7 @@ export class VueAuth extends Vue {
     }
 
     /** Returns the access token. If the token is invalid or missing, a new one is retrieved */
-    getTokenSilently (o: GetTokenSilentlyOptions): Promise<any> | undefined {
+    getTokenSilently (o: GetTokenSilentlyOptions): Promise<unknown> | undefined {
         return this.auth0Client?.getTokenSilently(o)
     }
 

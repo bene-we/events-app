@@ -10,6 +10,7 @@ type Auth0PluginOptions = {
 }
 
 /** Define a default action to perform after authentication */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const DEFAULT_REDIRECT_CALLBACK = (appState: unknown) =>
     window.history.replaceState({}, document.title, window.location.pathname)
 
@@ -19,6 +20,7 @@ let instance: VueAuth
 export const getInstance = (): VueAuth => instance
 
 /** Creates an instance of the Auth0 SDK. If one has already been created, it returns that instance */
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const useAuth0 = ({
     onRedirectCallback = DEFAULT_REDIRECT_CALLBACK,
     redirectUri = window.location.origin,

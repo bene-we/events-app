@@ -69,9 +69,11 @@ export default class EventSingle extends Vue {
     },
   ]
   created (): void {
-    const ID = Number(this.$route.params.id);
-    let event = this.events.find((event) => event.id === ID);
-    this.event = event!;
+    const ID = Number(this.$route.params.id)
+    let event = this.events.find((event) => event.id === ID)
+    if (event) {
+      this.event = event
+    }
     // ToDo: Add check in case of wrong route id
   }
 }
