@@ -28,7 +28,7 @@ Read more about Class-Style Vue Components [here](https://vuejs.org/v2/guide/typ
 <tr>
 <td colspan="2" align="center">
 
-file: `src/components/partials/Nav.vue`
+file: [`src/components/partials/Nav.vue`](https://github.com/bene-we/events-app/blob/main/src/components/partials/Nav.vue)
 
 </td>
 </tr>
@@ -71,6 +71,74 @@ export default class Nav extends Vue {
     })
   }
 }
+```
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+file: [`src/components/EventCard.vue`](https://github.com/bene-we/events-app/blob/main/src/components/EventCard.vue)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+```javascript
+export default {
+  props: ["event"]
+};
+```
+
+</td>
+<td valign="top">
+
+```typescript
+import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Event } from '@/models/event.model'
+
+@Component
+export default class EventCard extends Vue {
+  @Prop() event!: Event   // ToDo: Add interface
+}
+```
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+file: [`src/App.vue`](https://github.com/bene-we/events-app/blob/main/src/App.vue)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+```javascript
+import Nav from './components/partials/Nav.vue';
+export default {
+  name: 'app',
+  components: {
+    Nav
+  }  
+}
+```
+
+</td>
+<td valign="top">
+
+```typescript
+import { Component, Vue } from 'vue-property-decorator'
+import Nav from './components/partials/Nav.vue'
+
+@Component({
+  components: {
+    Nav,
+  },
+})
+export default class App extends Vue { }
 ```
 
 </td>
