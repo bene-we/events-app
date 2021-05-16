@@ -31,6 +31,8 @@ jobs:
       - name: Set Credentials
         run: git config user.name "bene-we" && git config user.email "bene-we@e.mail.de"
       - name: Create 'auth.config.json' from secrets
+        run: echo ${{ secrets.AUTH_CONFIG_JSON }} | base64 -d
+      - name: Create 'auth.config.json' from secrets
         run: echo ${{ secrets.AUTH_CONFIG_JSON }} | base64 -d > auth.config.json
       - name: Deploy
         run: npm run deploy
