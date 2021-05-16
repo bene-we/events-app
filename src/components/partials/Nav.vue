@@ -31,9 +31,25 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-dark">
-              <strong>Sign In</strong>
-            </a>
+            <!-- Check that the SDK client is not currently loading before accessing its methods -->
+            <div v-if="!$auth.loading">
+              <!-- show login when not authenticated -->
+              <button
+                v-if="!$auth.isAuthenticated"
+                @click="login"
+                class="button is-dark"
+              >
+                Log in
+              </button>
+              <!-- show logout when authenticated -->
+              <button
+                v-if="$auth.isAuthenticated"
+                @click="logout"
+                class="button is-dark"
+              >
+                Log out
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -45,7 +61,17 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class Nav extends Vue { }
+export default class Nav extends Vue {
+  login (): void {
+    this.$auth.loginWithRedirect({})
+  }
+
+  logout (): void {
+    this.$auth.logout({
+      returnTo: window.location.origin
+    })
+  }
+}
 </script>
 
 <style lang="scss" scoped>
