@@ -16,7 +16,7 @@ import { Event } from '@/models/event.model'
 
 @Component
 export default class EventCard extends Vue {
-  @Prop() event!: Event   // ToDo: Add interface
+  @Prop() event!: Event
 }
 </script>
 
