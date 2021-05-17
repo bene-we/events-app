@@ -18,6 +18,7 @@ Vue.use(Auth0Plugin, {
 })
 
 Vue.config.productionTip = false
+console.log(process.env.BASE_URL);
 
 new Vue({
   router,
