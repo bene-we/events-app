@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar container" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
+      <router-link class="navbar-item" to="/">
         <strong class="is-size-4">Animal Rescue League</strong>
-      </a>
+      </router-link>
       <a
         role="button"
         class="navbar-burger burger"
