@@ -23,13 +23,14 @@ export const getInstance = (): VueAuth => instance
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const useAuth0 = ({
     onRedirectCallback = DEFAULT_REDIRECT_CALLBACK,
-    redirectUri = window.location.origin,
+    redirectUri = window.location.origin + process.env.BASE_URL,
     ...options
 }): VueAuth => {
     if (instance) return instance
 
     // The 'instance' is simply a Vue object
     instance = new VueAuth()
+    console.log('auth.ts', redirectUri)
     instance.init(onRedirectCallback, redirectUri, options as Auth0Options)
 
     return instance
