@@ -68,7 +68,7 @@ export default class Nav extends Vue {
 
   logout (): void {
     this.$auth.logout({
-      returnTo: window.location.origin
+      returnTo: window.location.origin + process.env.BASEURL
     })
   }
 }
