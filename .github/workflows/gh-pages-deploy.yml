@@ -37,3 +37,5 @@ jobs:
         run: echo "$AUTH_CONFIG_JSON" | base64 -d > auth.config.json
       - name: Deploy
         run: npm run deploy
+      - name: Copy index.html to 404.html to fix vue-router
+        run: cp index.html 404.html
