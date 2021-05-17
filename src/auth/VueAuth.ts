@@ -88,6 +88,7 @@ export class VueAuth extends Vue {
             ) {
                 // handle the redirect and retrieve tokens
                 const { appState } = await this.auth0Client?.handleRedirectCallback() ?? { appState: undefined }
+                console.log('VueAuth.ts appState', appState);
 
                 // Notify subscribers that the redirect callback has happened, passing the appState
                 // (useful for retrieving any pre-authentication state)
