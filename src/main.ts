@@ -9,12 +9,11 @@ Vue.use(Auth0Plugin, {
   domain,
   clientId,
   onRedirectCallback: (appState: any) => {  // eslint-disable-line @typescript-eslint/no-explicit-any
-    /* router.push(
+    router.push(
       appState && appState.targetUrl
         ? appState.targetUrl
-        : window.location.pathname
-    ) */
-    router.push('/')
+        : '/'
+    )
   }
 })
 
