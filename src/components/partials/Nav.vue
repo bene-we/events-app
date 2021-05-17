@@ -63,7 +63,7 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component
 export default class Nav extends Vue {
   login (): void {
-    this.$auth.loginWithRedirect({})
+    this.$auth.loginWithRedirect({ appState: { targetUrl: process.env.BASE_URL } })
   }
 
   logout (): void {
