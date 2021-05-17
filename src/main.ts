@@ -14,10 +14,12 @@ Vue.use(Auth0Plugin, {
         ? appState.targetUrl
         : window.location.pathname
     )
+    console.log('main.ts appState', appState);
   }
 })
 
 Vue.config.productionTip = false
+console.log(window.location.origin, window.location.href, window.location.pathname);
 
 new Vue({
   router,
