@@ -9,17 +9,18 @@ Vue.use(Auth0Plugin, {
   domain,
   clientId,
   onRedirectCallback: (appState: any) => {  // eslint-disable-line @typescript-eslint/no-explicit-any
-    router.push(
+    /* router.push(
       appState && appState.targetUrl
         ? appState.targetUrl
         : window.location.pathname
-    )
-    console.log('main.ts appState', appState);
+    ) */
+    router.push(process.env.BASE_URL)
+    console.log('main.ts appState', appState)
   }
 })
 
 Vue.config.productionTip = false
-console.log(window.location.origin, window.location.href, window.location.pathname);
+console.log(window.location.origin, window.location.href, window.location.pathname)
 
 new Vue({
   router,
