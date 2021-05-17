@@ -14,9 +14,7 @@ Vue.use(Auth0Plugin, {
         ? appState.targetUrl
         : window.location.pathname
     ) */
-    router.push('/about')
-    console.log('main.ts', process.env.BASE_URL);
-    console.log('main.ts appState', appState)
+    router.push('/')
   }
 })
 
