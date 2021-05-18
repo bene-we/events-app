@@ -1,8 +1,8 @@
 <template>
   <nav class="navbar container" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <router-link class="navbar-item" to="/">
-        <strong class="is-size-4">Animal Rescue League</strong>
+      <router-link class="navbar-item navbar-item-title" to="/">
+        <strong class="is-size-5">Animal Rescue League</strong>
       </router-link>
       <a
         role="button"
@@ -81,9 +81,15 @@ nav {
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: $ci-font;
     &.router-link-exact-active {
-      color: #d88d00;
+      color: $ci-yellow-red;
+    }
+  }
+
+  a.navbar-item-title {
+    &.router-link-exact-active {
+      color: $ci-font;
     }
   }
 }
