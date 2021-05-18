@@ -1,10 +1,10 @@
 // @import "@/styles/_variables.scss";
 
 // Customizations Here (Optional)
-$family-primary: $family-avenir;
+$family-primary: $family-yanone;
 
 // Overwrite bulma variables
 $primary: $ci-yellow-red;
 
 // Bulma Import
-@import '~bulma';
+@import "~bulma";
