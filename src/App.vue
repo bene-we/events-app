@@ -18,13 +18,22 @@ export default class App extends Vue { }
 </script>
 
 <style lang="scss">
-html {
-  overflow-y: auto !important;
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body,
+* {
+  box-sizing: border-box;
 }
 
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 </style>

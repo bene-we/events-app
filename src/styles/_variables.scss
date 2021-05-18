@@ -1,8 +1,9 @@
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;700&display=swap");
 
 // Set corporate design
-$ci-yellow-red: #F6BD60;
+$ci-yellow-red: #f6bd60;
 $ci-linen: #f7ede2;
 $ci-baby-pink: #f5cac3;
 $ci-morning-blue: #84a59d;
@@ -10,3 +11,4 @@ $ci-light-coral: #f28482;
 $ci-font: #2c3e50;
 
 $family-avenir: Avenir, Helvetica, Arial, sans-serif;
+$family-yanone: "Yanone Kaffeesatz", sans-serif;

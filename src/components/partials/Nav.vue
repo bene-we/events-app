@@ -2,7 +2,8 @@
   <nav class="navbar container" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <router-link class="navbar-item navbar-item-title" to="/">
-        <strong class="is-size-5">Animal Rescue League</strong>
+        <img src="~@/assets/logo.png" />
+        <strong>Animal Rescue League</strong>
       </router-link>
       <a
         role="button"
@@ -76,8 +77,21 @@ export default class Nav extends Vue {
 
 <style lang="scss" scoped>
 nav {
-  margin-top: 25px;
-  margin-bottom: 30px;
+  height: 64px;
+
+  .navbar-brand {
+    .navbar-item-title {
+      font-size: 1.7rem;
+
+      img {
+        margin: 0 12px 0 0;
+      }
+    }
+  }
+
+  .navbar-item {
+    font-size: 1.25rem;
+  }
 
   a {
     font-weight: bold;

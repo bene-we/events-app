@@ -1,6 +1,17 @@
 <template>
   <div class="home">
-    <section class="hero is-dark">
+    <section class="hero is-fullheight-with-navbar background-image">
+      <div class="hero-body">
+        <div class="container title-wrapper">
+          <h1 class="title">Welcome to the Animal Rescue League</h1>
+          <h2 class="subtitle">
+            Make sure you check out our upcoming events below
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="hero is-dark">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">Welcome to the Animal Rescue League</h1>
@@ -24,7 +35,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <EventsList />
   </div>
 </template>
@@ -47,23 +58,31 @@ export default class Home extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.hero {
-  text-align: center;
-  background-image: url("https://cdn.auth0.com/blog/vue-meetup/event-banner.png");
+.background-image {
+  background-image: linear-gradient(
+      90deg,
+      rgba(56, 35, 0, 0.75) 8%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    url("~@/assets/dog_shelter.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
 }
-.hero-body .title {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
-  padding: 40px 0 20px 0;
-  font-size: 60px;
+
+.title-wrapper {
+  margin-top: -200px;
+  .title {
+    font-size: 5rem;
+    color: white;
+  }
+
+  .subtitle {
+    font-size: 2.8rem;
+    color: white;
+  }
 }
-.subtitle {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
-  font-size: 30px;
-}
+
 .button-block {
   text-align: center;
   margin-left: auto;
