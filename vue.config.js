@@ -9,5 +9,11 @@ module.exports = {
         prependData: `@import "~@/styles/variables.scss";`
       }
     }
+  },
+  pages: {
+    index: {
+      entry: 'src/main.ts',
+      title: 'Animal Rescue League'
+    }
   }
 }
