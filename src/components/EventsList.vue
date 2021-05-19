@@ -68,7 +68,4 @@ export default class EventsList extends Vue {
     padding: 0 $gap;
   }
 }
-
-.events.container {
-}
 </style>
