@@ -97,7 +97,7 @@ nav {
     font-weight: bold;
     color: $ci-font;
     &.router-link-exact-active {
-      color: $ci-yellow-red;
+      color: $primary;
     }
   }
 

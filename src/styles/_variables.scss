@@ -1,13 +1,15 @@
 // Import a Google Font
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;700&display=swap");
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 // Set corporate design
-$ci-yellow-red: #f6bd60;
-$ci-linen: #f7ede2;
-$ci-baby-pink: #f5cac3;
-$ci-morning-blue: #84a59d;
-$ci-light-coral: #f28482;
+$maximum-yellow-red: #f6bd60ff;
+$saddle-brown: #874000ff;
+$oxford-blue: #03254eff;
+$morning-blue: #84a59dff;
+$light-coral: #f28482ff;
+
 $ci-font: #2c3e50;
 
 $family-avenir: Avenir, Helvetica, Arial, sans-serif;
@@ -17,9 +19,11 @@ $family-yanone: "Yanone Kaffeesatz", sans-serif;
 $family-primary: $family-yanone;
 
 // Overwrite bulma variables
-$primary: $ci-yellow-red;
-$danger: $ci-light-coral;
-$info: $ci-morning-blue;
+$primary: $maximum-yellow-red;
+$danger: $light-coral;
+$info: $morning-blue;
+$success: $oxford-blue;
+$warning: $saddle-brown;
 
 .is-text-overflow {
     flex: 1;

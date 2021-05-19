@@ -11,16 +11,23 @@
       </div>
     </section>
     <EventsList />
+    <section
+      class="divider has-background-primary mb-6"
+      style="height: 80px"
+    ></section>
+    <SignupForm />
   </div>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator'
 import EventsList from '@/components/EventsList.vue'
+import SignupForm from '@/components/SignupForm.vue'
 
 @Component({
   components: {
     EventsList,
+    SignupForm
   }
 })
 export default class Home extends Vue {
