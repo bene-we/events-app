@@ -1,19 +1,4 @@
 // @import "@/styles/_variables.scss";
 
-// Customizations Here (Optional)
-$family-primary: $family-yanone;
-
-// Overwrite bulma variables
-$primary: $ci-yellow-red;
-$danger: $ci-light-coral;
-$info: $ci-morning-blue;
-
-.is-text-overflow {
-    flex: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
 // Bulma Import
 @import "~bulma/bulma";

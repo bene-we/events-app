@@ -12,3 +12,18 @@ $ci-font: #2c3e50;
 
 $family-avenir: Avenir, Helvetica, Arial, sans-serif;
 $family-yanone: "Yanone Kaffeesatz", sans-serif;
+
+// Customizations Here (Optional)
+$family-primary: $family-yanone;
+
+// Overwrite bulma variables
+$primary: $ci-yellow-red;
+$danger: $ci-light-coral;
+$info: $ci-morning-blue;
+
+.is-text-overflow {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -58,11 +58,6 @@ export default class Home extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import "~bulma/sass/utilities/functions";
-@import "~bulma/sass/utilities/initial-variables";
-@import "~bulma/sass/utilities/derived-variables";
-@import "~bulma/sass/utilities/mixins";
-
 .background-image {
   background-image: linear-gradient(
       90deg,
