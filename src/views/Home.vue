@@ -58,6 +58,11 @@ export default class Home extends Vue {
 </script>
 
 <style lang="scss" scoped>
+@import "~bulma/sass/utilities/functions";
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/derived-variables";
+@import "~bulma/sass/utilities/mixins";
+
 .background-image {
   background-image: linear-gradient(
       90deg,
@@ -68,18 +73,45 @@ export default class Home extends Vue {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @include mobile {
+    background-image: linear-gradient(
+        90deg,
+        rgba(56, 35, 0, 0.65) 0%,
+        rgba(255, 255, 255, 0) 50%
+      ),
+      url("~@/assets/dog_shelter.jpg");
+  }
+}
+
+.hero-body {
+  @include mobile {
+    align-items: stretch !important;
+  }
 }
 
 .title-wrapper {
   margin-top: -200px;
+
+  @include mobile {
+    margin-top: 0;
+  }
   .title {
     font-size: 5rem;
     color: white;
+
+    @include mobile {
+      font-size: 3rem;
+    }
   }
 
   .subtitle {
     font-size: 2.8rem;
     color: white;
+
+    @include mobile {
+      font-size: 1.5rem;
+    }
   }
 }
 
