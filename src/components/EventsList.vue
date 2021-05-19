@@ -1,6 +1,6 @@
 <template>
-  <div class="events container">
-    <h2 class="subtitle is-3">Check out our upcoming events</h2>
+  <div class="events container mb-6 pb-6">
+    <h2 class="subtitle is-3 mb-6">Check out our upcoming events</h2>
     <div class="columns is-multiline">
       <div
         v-for="event in events"
@@ -50,7 +50,7 @@ export default class EventsList extends Vue {
       category: 'Adoptions',
       description:
         'Come to our donation drive to help us replenish our stock of pet food, toys, bedding, etc. We will have live bands, games, food trucks, and much more.',
-      featuredImage: 'https://placekitten.com/500/500',
+      featuredImage: 'https://placekitten.com/g/500/500',
       images: ['https://placekitten.com/500/500'],
       location: '1234 Dog Alley',
       date: '11-21-2019',
