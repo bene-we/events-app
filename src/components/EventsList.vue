@@ -64,5 +64,8 @@ export default class EventsList extends Vue {
 .events {
   margin-top: 100px;
   text-align: center;
+  @include mobile {
+    padding: 0 $gap;
+  }
 }
 </style>

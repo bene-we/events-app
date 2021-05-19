@@ -8,7 +8,7 @@
       </div>
       <div class="card-content has-text-left p-0">
         <div
-          class="card-event-when has-text-primary-light has-background-primary is-size-5 px-5 py-2 is-flex is-flex-direction-row is-align-content-center is-justify-content-space-between has-text-weight-bold"
+          class="card-event-when has-text-primary-light has-background-danger is-size-5 px-5 py-2 is-flex is-flex-direction-row is-align-content-center is-justify-content-space-between has-text-weight-bold"
         >
           <span>{{ event.date }}</span>
           <span>{{ event.location }} </span>

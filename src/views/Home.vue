@@ -10,43 +10,24 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="hero is-dark">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Welcome to the Animal Rescue League</h1>
-          <h2 class="subtitle">
-            Make sure you check out our upcoming events below
-          </h2>
-          <div v-if="!$auth.loading" class="button-block">
-            <button
-              v-if="!$auth.isAuthenticated"
-              @click="login"
-              class="button is-xl is-primary"
-            >
-              Sign Up to Browse Events
-            </button>
-            <h3
-              v-if="$auth.isAuthenticated"
-              class="is-size-3 has-background-dark welcome"
-            >
-              Welcome, {{ $auth.user.nickname }}!
-            </h3>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <EventsList />
+    <section
+      class="divider has-background-primary mb-6"
+      style="height: 80px"
+    ></section>
+    <SignupForm />
   </div>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator'
 import EventsList from '@/components/EventsList.vue'
+import SignupForm from '@/components/SignupForm.vue'
 
 @Component({
   components: {
     EventsList,
+    SignupForm
   }
 })
 export default class Home extends Vue {
@@ -68,18 +49,45 @@ export default class Home extends Vue {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @include mobile {
+    background-image: linear-gradient(
+        90deg,
+        rgba(56, 35, 0, 0.65) 0%,
+        rgba(255, 255, 255, 0) 50%
+      ),
+      url("~@/assets/dog_shelter.jpg");
+  }
+}
+
+.hero-body {
+  @include mobile {
+    align-items: stretch !important;
+  }
 }
 
 .title-wrapper {
   margin-top: -200px;
+
+  @include mobile {
+    margin-top: 0;
+  }
   .title {
     font-size: 5rem;
     color: white;
+
+    @include mobile {
+      font-size: 3rem;
+    }
   }
 
   .subtitle {
     font-size: 2.8rem;
     color: white;
+
+    @include mobile {
+      font-size: 1.5rem;
+    }
   }
 }
 
