@@ -1,10 +1,26 @@
 <template>
   <div class="event-card">
     <div class="card">
-      <div class="card-content">
-        <h2 class="is-size-4 has-text-weight-bold">{{ event.name }}</h2>
-        <small class="event-date">{{ event.date }}</small>
-        <span>{{ event.location }}</span>
+      <div class="card-image">
+        <figure class="image is-3by2">
+          <img :src="event.featuredImage" :alt="`Image for ${event.name}`" />
+        </figure>
+      </div>
+      <div class="card-content has-text-left p-0">
+        <div
+          class="card-event-when has-text-primary-light has-background-primary is-size-5 px-5 py-2 is-flex is-flex-direction-row is-align-content-center is-justify-content-space-between has-text-weight-bold"
+        >
+          <span>{{ event.date }}</span>
+          <span>{{ event.location }} </span>
+        </div>
+        <div class="card-content-details p-5">
+          <h2 class="is-size-3 has-text-weight-bold">
+            {{ event.name }}
+          </h2>
+          <div class="is-flex">
+            <span class="is-text-overflow">{{ event.description }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -21,41 +37,15 @@ export default class EventCard extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.card {
-  background-image: url("https://placekitten.com/400/400");
-  height: 200px;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-}
-.card-content {
-  padding-top: 50px;
-  position: absolute;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.35);
-  top: 0;
-  padding: 10px;
-  height: 200px;
-  width: 100%;
-  span {
-    font-size: 18px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-    right: 0;
+.card-image {
+  .image {
+    height: 200px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
-  h2 {
-    margin-top: 10px;
-  }
-}
-.event-date {
-  background-color: #151515;
-  color: #fff;
-  font-size: 0.75em;
-  padding: 2px 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 </style>
