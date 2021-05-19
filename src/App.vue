@@ -27,6 +27,10 @@ export default class App extends Vue {
 </script>
 
 <style lang="scss">
+html {
+  overflow-y: hidden !important;
+}
+
 html,
 body {
   width: 100%;

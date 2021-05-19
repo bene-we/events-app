@@ -1,5 +1,5 @@
 <template>
-  <div class="events container is-fluid mb-6 pb-6">
+  <div class="events container mb-6 pb-6">
     <h2 class="subtitle is-3 mb-6">Check out our upcoming events</h2>
     <div class="columns is-multiline">
       <div
@@ -64,5 +64,11 @@ export default class EventsList extends Vue {
 .events {
   margin-top: 100px;
   text-align: center;
+  @include mobile {
+    padding: 0 $gap;
+  }
+}
+
+.events.container {
 }
 </style>
