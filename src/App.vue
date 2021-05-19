@@ -2,6 +2,13 @@
   <div id="app">
     <Nav />
     <router-view />
+    <footer class="footer is-background-secondary has-background-info">
+      <div class="content has-text-centered">
+        <p class="is-size-4 is-family-sans-serif has-text-info-light">
+          &copy; {{ thisYear }} Animal Rescue League LLC
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -14,7 +21,9 @@ import Nav from './components/partials/Nav.vue'
     Nav,
   },
 })
-export default class App extends Vue { }
+export default class App extends Vue {
+  private thisYear = new Date().getFullYear();
+}
 </script>
 
 <style lang="scss">
