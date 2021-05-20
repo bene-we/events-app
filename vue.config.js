@@ -1,5 +1,5 @@
 module.exports = {
-  lintOnSave: true,
+  lintOnSave: false,
   publicPath: process.env.NODE_ENV === 'production'
     ? '/events-app/'
     : '/',
