@@ -11,10 +11,6 @@
       </div>
     </section>
     <EventsList />
-    <section
-      class="divider has-background-primary mb-6"
-      style="height: 80px"
-    ></section>
     <SignupForm />
   </div>
 </template>

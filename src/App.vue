@@ -2,7 +2,7 @@
   <div id="app">
     <Nav />
     <router-view />
-    <footer class="footer is-background-secondary has-background-info">
+    <footer class="footer has-background-warning">
       <div class="content has-text-centered">
         <p class="is-size-4 is-family-sans-serif has-text-info-light">
           &copy; {{ thisYear }} Animal Rescue League LLC
