@@ -33,5 +33,9 @@ jobs:
         env:
           AUTH_CONFIG_JSON: ${{ secrets.AUTH_CONFIG_JSON }}
         run: echo "$AUTH_CONFIG_JSON" | base64 -d > auth.config.json
+      - name: Create '.env.local' from secrets
+        env:
+          ENV_LOCAL: ${{ secrets.ENV_LOCAL }}
+        run: echo "$ENV_LOCAL" | base64 -d > .env.local
       - name: Deploy
         run: npm run deploy
