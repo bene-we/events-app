@@ -102,6 +102,7 @@
 #signup-form {
   padding: 80px 0;
 }
+
 .field {
   font-family: $family-roboto;
 }
